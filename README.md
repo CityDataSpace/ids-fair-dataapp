@@ -1,5 +1,5 @@
-# IDS Smart data app template
-**Contact:** FIT AppStore Team <ids-appstore@fit.fraunhofer.de>
+# IDS FAIR data app
+**Contact:** FIT FAIR Team 
 
 This is an example template for a smart-data-app that helps you to get started.
 
@@ -13,7 +13,7 @@ It provides an HTTP API for the following endpoints:
 
 ## Getting started
 
-At first clone the repository: https://gitlab.cc-asp.fraunhofer.de/fhg-fit-ids/ids-app-template.git
+At first clone the repository: https://gitlab.fit.fraunhofer.de/abu.ibne.bayazid/ids-fair-dataapp.git 
    
 ## Communication Endpoints
    
