@@ -1,0 +1,218 @@
+{
+  "@type": "ids:AppResource",
+  "@id": "https://w3id.org/idsa/autogen/appResource/cc470321-b029-4cd3-a3f5-023f4cd3a84c",
+  "ids:version": "1.0.0",
+  "ids:description": [
+    {
+      "@value": "Example Smart-Data-App for demonstration purposes",
+      "@language": "https://w3id.org/idsa/code/EN"
+    }
+  ],
+  "ids:created": "2020-11-11T17:42:50.609UTC",
+  "ids:resourceEndpoint": [
+    {
+      "@type": "ids:ConnectorEndpoint",
+      "@id": "https://w3id.org/idsa/autogen/connectorEndpoint/88936558-65cc-443b-838f-6528badcaec3",
+      "ids:path": "/",
+      "ids:endpointInformation": [
+        {
+          "@value": "This is the default endpoint of the Fraunhofer FIT AppStore",
+          "@language": "https://w3id.org/idsa/code/EN"
+        }
+      ],
+      "ids:endpointDocumentation": [
+        "http://appstore.fit.fraunhofer.de/app/appId"
+      ],
+      "ids:accessURL": "https://appstore.fit.fraunhofer.de"
+    }
+  ],
+  "ids:title": [
+    {
+      "@value": "IDSSmartDataAppTemplate",
+      "@language": "https://w3id.org/idsa/code/EN"
+    }
+  ],
+  "ids:modified": "2020-11-11T17:42:50.612UTC",
+  "ids:standardLicense": "https://www.apache.org/licenses/LICENSE-2.0",
+  "ids:customLicense": "https://www.apache.org/licenses/LICENSE-2.0",
+  "ids:representation": [
+    {
+      "@type": "ids:AppRepresentation",
+      "@id": "https://w3id.org/idsa/autogen/appRepresentation/2aff65e1-9dff-48aa-b8e0-a0f972165ab3",
+      "ids:dataAppInformation": {
+        "@type": "ids:SmartDataApp",
+        "@id": "https://w3id.org/idsa/autogen/smartDataApp/c44cce92-5883-4f68-b730-08e8a7df49b0",
+        "ids:appDocumentation": "Place for an app-related human-readable documentation",
+        "ids:appEnvironmentVariables": "$dbUser=sa;$dpPasswd=passwd",
+        "ids:appStorageConfiguration": "-v /data",
+        "ids:appEndpoint": [
+          {
+            "@type": "ids:AppEndpoint",
+            "@id": "https://w3id.org/idsa/autogen/appEndpoint/15afdfe0-9e87-4516-8499-48453afe6a15",
+            "ids:path": "/input",
+            "ids:appEndpointProtocol": "HTTP/1.1",
+            "ids:endpointInformation": [
+              {
+                "@value": "Endpoint for app input data",
+                "@language": "https://w3id.org/idsa/code/EN"
+              }
+            ],
+            "ids:endpointDocumentation": [
+              "https://app.swaggerhub.com/apis/app/1337"
+            ],
+            "ids:appEndpointMediaType": {
+              "@type": "ids:IANAMediaType",
+              "@id": "https://w3id.org/idsa/autogen/iANAMediaType/27f8fdd6-d214-46c0-82c2-46d56f5ac464",
+              "ids:filenameExtension": "application/json"
+            },
+            "ids:appEndpointPort": 8080,
+            "ids:appEndpointType": {
+              "@id": "idsc:INPUT_ENDPOINT"
+            }
+          },
+          {
+            "@type": "ids:AppEndpoint",
+            "@id": "https://w3id.org/idsa/autogen/appEndpoint/8e678bdd-7bcf-4b90-a2fb-95c6a8f2b7b8",
+            "ids:path": "/output",
+            "ids:appEndpointProtocol": "HTTP/1.1",
+            "ids:endpointInformation": [
+              {
+                "@value": "Endpoint for app output data",
+                "@language": "https://w3id.org/idsa/code/EN"
+              }
+            ],
+            "ids:endpointDocumentation": [
+              "https://app.swaggerhub.com/apis/app/1337"
+            ],
+            "ids:appEndpointMediaType": {
+              "@type": "ids:IANAMediaType",
+              "@id": "https://w3id.org/idsa/autogen/iANAMediaType/5e80ea4e-b324-4985-b759-9709161728a7",
+              "ids:filenameExtension": "application/json"
+            },
+            "ids:appEndpointPort": 8080,
+            "ids:appEndpointType": {
+              "@id": "idsc:OUTPUT_ENDPOINT"
+            }
+          },
+          {
+            "@type": "ids:AppEndpoint",
+            "@id": "https://w3id.org/idsa/autogen/appEndpoint/5b22087c-e8aa-4385-8929-b2139ecd3e14",
+            "ids:path": "/config",
+            "ids:appEndpointProtocol": "HTTP/1.1",
+            "ids:endpointInformation": [
+              {
+                "@value": "Endpoint for app configuration / parameterization",
+                "@language": "https://w3id.org/idsa/code/EN"
+              }
+            ],
+            "ids:endpointDocumentation": [
+              "https://app.swaggerhub.com/apis/app/1337"
+            ],
+            "ids:appEndpointMediaType": {
+              "@type": "ids:IANAMediaType",
+              "@id": "https://w3id.org/idsa/autogen/iANAMediaType/f205a776-725b-464b-b3f8-d47a0df37589",
+              "ids:filenameExtension": "application/json"
+            },
+            "ids:appEndpointPort": 8080,
+            "ids:appEndpointType": {
+              "@id": "idsc:CONFIG_ENDPOINT"
+            }
+          },
+          {
+            "@type": "ids:AppEndpoint",
+            "@id": "https://w3id.org/idsa/autogen/appEndpoint/9af3ec37-0fe1-40a4-9417-f824157a8a8c",
+            "ids:path": "/status",
+            "ids:appEndpointProtocol": "HTTP/1.1",
+            "ids:endpointInformation": [
+              {
+                "@value": "Endpoint for app status information",
+                "@language": "https://w3id.org/idsa/code/EN"
+              }
+            ],
+            "ids:endpointDocumentation": [
+              "https://app.swaggerhub.com/apis/app/1337"
+            ],
+            "ids:appEndpointMediaType": {
+              "@type": "ids:IANAMediaType",
+              "@id": "https://w3id.org/idsa/autogen/iANAMediaType/1251d09e-1bb9-4497-b8a6-55b57fe5fc5f",
+              "ids:filenameExtension": "application/json"
+            },
+            "ids:appEndpointPort": 8080,
+            "ids:appEndpointType": {
+              "@id": "idsc:STATUS_ENDPOINT"
+            }
+          },
+          {
+            "@type": "ids:AppEndpoint",
+            "@id": "https://w3id.org/idsa/autogen/appEndpoint/f1d9a651-f083-46e0-9ae9-dc3c1461193a",
+            "ids:path": "/process",
+            "ids:appEndpointProtocol": "HTTP/1.1",
+            "ids:endpointInformation": [
+              {
+                "@value": "Endpoint for app processing",
+                "@language": "https://w3id.org/idsa/code/EN"
+              }
+            ],
+            "ids:endpointDocumentation": [
+              "https://app.swaggerhub.com/apis/app/1337"
+            ],
+            "ids:appEndpointMediaType": {
+              "@type": "ids:IANAMediaType",
+              "@id": "https://w3id.org/idsa/autogen/iANAMediaType/c99d0519-5e1f-4030-bc07-dc97c2992bca",
+              "ids:filenameExtension": "application/json"
+            },
+            "ids:appEndpointPort": 8080,
+            "ids:appEndpointType": {
+              "@id": "idsc:PROCESS_ENDPOINT"
+            }
+          },
+          {
+            "@type": "ids:AppEndpoint",
+            "@id": "https://w3id.org/idsa/autogen/appEndpoint/ce2f939d-3145-4b45-aef8-480656ab54eb",
+            "ids:path": "/usage",
+            "ids:appEndpointProtocol": "HTTP/1.1",
+            "ids:endpointInformation": [
+              {
+                "@value": "Endpoint for app usage policies",
+                "@language": "https://w3id.org/idsa/code/EN"
+              }
+            ],
+            "ids:endpointDocumentation": [
+              "https://app.swaggerhub.com/apis/app/1337"
+            ],
+            "ids:appEndpointMediaType": {
+              "@type": "ids:IANAMediaType",
+              "@id": "https://w3id.org/idsa/autogen/iANAMediaType/d1d132d2-ed32-4856-8636-0cd34688d4f3",
+              "ids:filenameExtension": "application/json"
+            },
+            "ids:appEndpointPort": 8080,
+            "ids:appEndpointType": {
+              "@id": "idsc:USAGE_POLICY_ENDPOINT"
+            }
+          }
+        ]
+      },
+      "ids:dataAppRuntimeEnvironment": "Docker",
+      "ids:dataAppDistributionService": "https://appstore.fit.fraunhofer.de/registry",
+      "ids:mediaType": {
+        "@type": "ids:IANAMediaType",
+        "@id": "https://w3id.org/idsa/autogen/iANAMediaType/7882108f-6c67-4f26-98e2-2092e51c367d",
+        "ids:filenameExtension": "application/zip"
+      }
+    }
+  ],
+  "ids:keyword": [
+    {
+      "@value": "Demo",
+      "@language": "https://w3id.org/idsa/code/EN"
+    },
+    {
+      "@value": "Example",
+      "@language": "https://w3id.org/idsa/code/EN"
+    },
+    {
+      "@value": "Smart-Data-App",
+      "@language": "https://w3id.org/idsa/code/EN"
+    }
+  ]
+}

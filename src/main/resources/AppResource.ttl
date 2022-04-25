@@ -1,0 +1,123 @@
+<https://w3id.org/idsa/autogen/appRepresentation/2aff65e1-9dff-48aa-b8e0-a0f972165ab3>
+        a                         <ids:AppRepresentation> ;
+        <ids:dataAppDistributionService>
+                "https://appstore.fit.fraunhofer.de/registry" ;
+        <ids:dataAppInformation>  <https://w3id.org/idsa/autogen/smartDataApp/c44cce92-5883-4f68-b730-08e8a7df49b0> ;
+        <ids:dataAppRuntimeEnvironment>
+                "Docker" ;
+        <ids:mediaType>           <https://w3id.org/idsa/autogen/iANAMediaType/7882108f-6c67-4f26-98e2-2092e51c367d> .
+
+<https://w3id.org/idsa/autogen/iANAMediaType/d1d132d2-ed32-4856-8636-0cd34688d4f3>
+        a                        <ids:IANAMediaType> ;
+        <ids:filenameExtension>  "application/json" .
+
+<https://w3id.org/idsa/autogen/connectorEndpoint/88936558-65cc-443b-838f-6528badcaec3>
+        a                            <ids:ConnectorEndpoint> ;
+        <ids:accessURL>              "https://appstore.fit.fraunhofer.de" ;
+        <ids:endpointDocumentation>  "http://appstore.fit.fraunhofer.de/app/appId" ;
+        <ids:endpointInformation>    "This is the default endpoint of the Fraunhofer FIT AppStore"@https://w3id.org/idsa/code/en ;
+        <ids:path>                   "/" .
+
+<https://w3id.org/idsa/autogen/iANAMediaType/7882108f-6c67-4f26-98e2-2092e51c367d>
+        a                        <ids:IANAMediaType> ;
+        <ids:filenameExtension>  "application/zip" .
+
+<https://w3id.org/idsa/autogen/iANAMediaType/c99d0519-5e1f-4030-bc07-dc97c2992bca>
+        a                        <ids:IANAMediaType> ;
+        <ids:filenameExtension>  "application/json" .
+
+<https://w3id.org/idsa/autogen/appEndpoint/8e678bdd-7bcf-4b90-a2fb-95c6a8f2b7b8>
+        a                            <ids:AppEndpoint> ;
+        <ids:appEndpointMediaType>   <https://w3id.org/idsa/autogen/iANAMediaType/5e80ea4e-b324-4985-b759-9709161728a7> ;
+        <ids:appEndpointPort>        8080 ;
+        <ids:appEndpointProtocol>    "HTTP/1.1" ;
+        <ids:appEndpointType>        <idsc:OUTPUT_ENDPOINT> ;
+        <ids:endpointDocumentation>  "https://app.swaggerhub.com/apis/app/1337" ;
+        <ids:endpointInformation>    "Endpoint for app output data"@https://w3id.org/idsa/code/en ;
+        <ids:path>                   "/output" .
+
+<https://w3id.org/idsa/autogen/appEndpoint/f1d9a651-f083-46e0-9ae9-dc3c1461193a>
+        a                            <ids:AppEndpoint> ;
+        <ids:appEndpointMediaType>   <https://w3id.org/idsa/autogen/iANAMediaType/c99d0519-5e1f-4030-bc07-dc97c2992bca> ;
+        <ids:appEndpointPort>        8080 ;
+        <ids:appEndpointProtocol>    "HTTP/1.1" ;
+        <ids:appEndpointType>        <idsc:PROCESS_ENDPOINT> ;
+        <ids:endpointDocumentation>  "https://app.swaggerhub.com/apis/app/1337" ;
+        <ids:endpointInformation>    "Endpoint for app processing"@https://w3id.org/idsa/code/en ;
+        <ids:path>                   "/process" .
+
+<https://w3id.org/idsa/autogen/iANAMediaType/27f8fdd6-d214-46c0-82c2-46d56f5ac464>
+        a                        <ids:IANAMediaType> ;
+        <ids:filenameExtension>  "application/json" .
+
+<https://w3id.org/idsa/autogen/appEndpoint/5b22087c-e8aa-4385-8929-b2139ecd3e14>
+        a                            <ids:AppEndpoint> ;
+        <ids:appEndpointMediaType>   <https://w3id.org/idsa/autogen/iANAMediaType/f205a776-725b-464b-b3f8-d47a0df37589> ;
+        <ids:appEndpointPort>        8080 ;
+        <ids:appEndpointProtocol>    "HTTP/1.1" ;
+        <ids:appEndpointType>        <idsc:CONFIG_ENDPOINT> ;
+        <ids:endpointDocumentation>  "https://app.swaggerhub.com/apis/app/1337" ;
+        <ids:endpointInformation>    "Endpoint for app configuration / parameterization"@https://w3id.org/idsa/code/en ;
+        <ids:path>                   "/config" .
+
+<https://w3id.org/idsa/autogen/appEndpoint/15afdfe0-9e87-4516-8499-48453afe6a15>
+        a                            <ids:AppEndpoint> ;
+        <ids:appEndpointMediaType>   <https://w3id.org/idsa/autogen/iANAMediaType/27f8fdd6-d214-46c0-82c2-46d56f5ac464> ;
+        <ids:appEndpointPort>        8080 ;
+        <ids:appEndpointProtocol>    "HTTP/1.1" ;
+        <ids:appEndpointType>        <idsc:INPUT_ENDPOINT> ;
+        <ids:endpointDocumentation>  "https://app.swaggerhub.com/apis/app/1337" ;
+        <ids:endpointInformation>    "Endpoint for app input data"@https://w3id.org/idsa/code/en ;
+        <ids:path>                   "/input" .
+
+<https://w3id.org/idsa/autogen/smartDataApp/c44cce92-5883-4f68-b730-08e8a7df49b0>
+        a                              <ids:SmartDataApp> ;
+        <ids:appDocumentation>         "Place for an app-related human-readable documentation" ;
+        <ids:appEndpoint>              <https://w3id.org/idsa/autogen/appEndpoint/ce2f939d-3145-4b45-aef8-480656ab54eb> , <https://w3id.org/idsa/autogen/appEndpoint/5b22087c-e8aa-4385-8929-b2139ecd3e14> , <https://w3id.org/idsa/autogen/appEndpoint/9af3ec37-0fe1-40a4-9417-f824157a8a8c> , <https://w3id.org/idsa/autogen/appEndpoint/15afdfe0-9e87-4516-8499-48453afe6a15> , <https://w3id.org/idsa/autogen/appEndpoint/f1d9a651-f083-46e0-9ae9-dc3c1461193a> , <https://w3id.org/idsa/autogen/appEndpoint/8e678bdd-7bcf-4b90-a2fb-95c6a8f2b7b8> ;
+        <ids:appEnvironmentVariables>  "dbUser=sa;dpPasswd=passwd" ;
+        <ids:appStorageConfiguration>  "-v /data" .
+
+<https://w3id.org/idsa/autogen/appEndpoint/ce2f939d-3145-4b45-aef8-480656ab54eb>
+        a                            <ids:AppEndpoint> ;
+        <ids:appEndpointMediaType>   <https://w3id.org/idsa/autogen/iANAMediaType/d1d132d2-ed32-4856-8636-0cd34688d4f3> ;
+        <ids:appEndpointPort>        8080 ;
+        <ids:appEndpointProtocol>    "HTTP/1.1" ;
+        <ids:appEndpointType>        <idsc:USAGE_POLICY_ENDPOINT> ;
+        <ids:endpointDocumentation>  "https://app.swaggerhub.com/apis/app/1337" ;
+        <ids:endpointInformation>    "Endpoint for app usage policies"@https://w3id.org/idsa/code/en ;
+        <ids:path>                   "/usage" .
+
+<https://w3id.org/idsa/autogen/appEndpoint/9af3ec37-0fe1-40a4-9417-f824157a8a8c>
+        a                            <ids:AppEndpoint> ;
+        <ids:appEndpointMediaType>   <https://w3id.org/idsa/autogen/iANAMediaType/1251d09e-1bb9-4497-b8a6-55b57fe5fc5f> ;
+        <ids:appEndpointPort>        8080 ;
+        <ids:appEndpointProtocol>    "HTTP/1.1" ;
+        <ids:appEndpointType>        <idsc:STATUS_ENDPOINT> ;
+        <ids:endpointDocumentation>  "https://app.swaggerhub.com/apis/app/1337" ;
+        <ids:endpointInformation>    "Endpoint for app status information"@https://w3id.org/idsa/code/en ;
+        <ids:path>                   "/status" .
+
+<https://w3id.org/idsa/autogen/iANAMediaType/1251d09e-1bb9-4497-b8a6-55b57fe5fc5f>
+        a                        <ids:IANAMediaType> ;
+        <ids:filenameExtension>  "application/json" .
+
+<https://w3id.org/idsa/autogen/iANAMediaType/f205a776-725b-464b-b3f8-d47a0df37589>
+        a                        <ids:IANAMediaType> ;
+        <ids:filenameExtension>  "application/json" .
+
+<https://w3id.org/idsa/autogen/appResource/cc470321-b029-4cd3-a3f5-023f4cd3a84c>
+        a                       <ids:AppResource> ;
+        <ids:created>           "2020-11-11T17:42:50.609UTC" ;
+        <ids:customLicense>     "https://www.apache.org/licenses/LICENSE-2.0" ;
+        <ids:description>       "Example Smart-Data-App for demonstration purposes"@https://w3id.org/idsa/code/en ;
+        <ids:keyword>           "Demo"@https://w3id.org/idsa/code/en , "Smart-Data-App"@https://w3id.org/idsa/code/en , "Example"@https://w3id.org/idsa/code/en ;
+        <ids:modified>          "2020-11-11T17:42:50.612UTC" ;
+        <ids:representation>    <https://w3id.org/idsa/autogen/appRepresentation/2aff65e1-9dff-48aa-b8e0-a0f972165ab3> ;
+        <ids:resourceEndpoint>  <https://w3id.org/idsa/autogen/connectorEndpoint/88936558-65cc-443b-838f-6528badcaec3> ;
+        <ids:standardLicense>   "https://www.apache.org/licenses/LICENSE-2.0" ;
+        <ids:title>             "IDSSmartDataAppTemplate"@https://w3id.org/idsa/code/en ;
+        <ids:version>           "1.0.0" .
+
+<https://w3id.org/idsa/autogen/iANAMediaType/5e80ea4e-b324-4985-b759-9709161728a7>
+        a                        <ids:IANAMediaType> ;
+        <ids:filenameExtension>  "application/json" .
