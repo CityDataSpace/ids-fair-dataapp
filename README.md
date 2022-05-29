@@ -1,7 +1,7 @@
 # IDS FAIR data app
 **Contact:** FIT FAIR Team 
 
-This is an example template for a smart-data-app that helps you to get started.
+This is a smart IDS data app .
 
 It provides an HTTP API for the following endpoints:
 - Data Input
