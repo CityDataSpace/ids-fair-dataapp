@@ -1,7 +1,8 @@
 # IDS FAIR data app
 **Contact:** FIT FAIR Team 
 
-This is a smart IDS data app .
+This is a smart IDS data app.
+This app provides the functionality of ‘[FAIR evaluator service](https://gitlab.fit.fraunhofer.de/abu.ibne.bayazid/fairevaluator)‘ for evaluating metadata FAIRness of offered resources. 
 
 It provides an HTTP API for the following endpoints:
 - Data Input
