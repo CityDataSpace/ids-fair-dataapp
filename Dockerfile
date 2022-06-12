@@ -1,5 +1,5 @@
 FROM maven:latest AS maven
-LABEL maintainer="Dominic Reuter <dominic.reuter@fit.fraunhofer.de>"
+LABEL maintainer="abu ibne bayazid"
 
 COPY pom.xml /tmp/
 
